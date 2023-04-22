@@ -1,0 +1,179 @@
+:root{
+    --kaushan:'Kaushan Script', cursive;
+    --qizil: rgba(218, 40, 40, 0.579);
+    --sariq: rgba(222, 222, 24, 0.661)
+}
+.rasm{
+    background-image: linear-gradient(rgba(218, 40, 40, 0.579), rgba(222, 222, 24, 0.661)),url(./images/MoGo_01.png);
+    height: 100vh;
+}
+.creative{
+    font-family:var(--kaushan);
+    margin-top: 100px;
+}
+.welcome{
+    font-size: 50px;
+    font-weight: 900;
+}
+.welcome::after{
+    content: '';
+    height: 2px;
+    background-color: white;
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+}
+.nav-link{
+    font-weight: 300;
+}
+.hover:hover{
+    color: green
+}
+.navbar-brand{
+    transition: 10s;
+    animation: brand 5s infinite
+}
+.learn{
+    display:flex;
+    justify-content: center
+}
+.button1{
+    border: 2px solid white;
+    background-color:transparent;
+    color: #fff;
+}
+.button1:hover{
+    background-color: #fff;
+    color: #111
+}
+.widthh{
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 50px 5px;
+}
+.red{
+    width: 30%;
+    height: 1px;
+    background-color: red
+}
+.margintop{
+    margin: 50px 0
+}
+.we_do{
+    font-family: var(--kaushan);
+}
+.story{
+    font-weight: 700;
+    color: #111;
+}
+.chiziq{
+    width: 100px;
+    height: 3px;
+    background-color: red;
+    margin: 30px auto
+}
+.lorem{
+    width: 80%;
+    margin: auto;
+    padding-bottom:100px;
+}
+.linear{
+    width: 99%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(var(--qizil), var(--sariq));
+    top: 0;
+    margin: auto auto;
+    padding-top: 100px;
+    opacity: 0
+}
+.img:hover .linear{
+    opacity: 1
+}
+.img{
+    position: relative;
+    display: flex;
+}
+.img img{
+    object-fit: cover;
+    object-position:center;
+}
+.web_design{
+    border-left: 1px solid #fff;
+    padding-top: 20px;
+    width: 15%;
+}
+.blue{
+    background-color: rgb(139, 139, 238);
+    margin-top: 50px;
+}
+.right{
+    border-right: 1px solid #fff;
+}
+.fontsize{
+    font-size: 14px;
+    max-width: 100%;
+}
+.unique{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.693)), url(./images/MoGo_14.jpg);
+}
+.tablet{
+    display: inline-block;
+    position: relative;
+}
+.phone{
+    position: absolute;
+    bottom:0;
+    right: -30px;
+}
+#service .btn {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 12px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.dropdown{
+    margin: 5px 20px;
+}
+.dropdown-item {
+    white-space: normal;
+}
+
+.dropdown-menu {
+    position: static !important;
+    transform: translateY(0) !important;
+}
+
+.btn i {
+    color: rgb(58, 140, 58);
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+@keyframes brand{
+    0%{
+        font-weight: 400;
+        color: white;
+    }
+    50%{
+        font-weight: 900;
+        color: white;
+    }
+    100%{
+        font-weight: 400;
+        color: white 
+       }
+}
+
+@media only screen and (max-width:577px){
+    .margintop{
+        opacity: 0
+    }
+    .blue{
+        opacity: 0;
+    }
+}
